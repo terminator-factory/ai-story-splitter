@@ -13,7 +13,7 @@ const instructions = write(renderedPoml);
 
 console.log("Loaded prompt instructions from:", pomlPath);
 
-export const epicSplitter = new Agent({
+export const storySplitter = new Agent({
   name: 'epic-splitter',
   instructions: instructions,
   model: 'lmstudio/openai/gpt-oss-20b',

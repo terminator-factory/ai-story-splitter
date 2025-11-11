@@ -11,8 +11,6 @@ const pomlFile = fs.readFileSync(pomlPath, 'utf-8');
 const renderedPoml = await read(pomlFile);
 const instructions = write(renderedPoml);
 
-console.log("Loaded prompt instructions from:", pomlPath);
-
 export const storySplitter = new Agent({
   name: 'story-splitter',
   instructions: instructions,

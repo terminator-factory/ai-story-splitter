@@ -2,7 +2,7 @@
 import { Mastra } from '@mastra/core/mastra';
 import { PinoLogger } from '@mastra/loggers';
 import { LibSQLStore } from '@mastra/libsql';
-import { storySplitter } from './agents/ai-story-spitter-agent';
+import { storySplitter } from './agents/story-splitter-agent';
 
 export const mastra = new Mastra({
   agents: { storySplitter },

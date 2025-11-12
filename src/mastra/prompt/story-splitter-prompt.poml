@@ -13,7 +13,7 @@
     <Item>"tasks" must be an array of objects, each representing a sub-task.</Item>
     <Item>Each sub-task object must have two keys: "title" (a string) and "complexity" (an integer from 1 to 5).</Item>
     <Item>The complexity should reflect the estimated effort required to complete the task.</Item>
-    <Item>Language of output MUST match the input (RU->RU, EN->EN).</Item>
+    <Item>Language of output MUST always be Russian.</Item>
   </List>
   <ExampleOutput>
     {

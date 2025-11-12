@@ -6,6 +6,7 @@ import { storySplitter } from './agents/story-splitter-agent';
 
 export const mastra = new Mastra({
   agents: { storySplitter },
+  workflows: {},
   storage: new LibSQLStore({
     // stores observability, scores, ... into memory storage, if it needs to persist, change to file:../mastra.db
     url: ":memory:",

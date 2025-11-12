@@ -26,7 +26,8 @@
 - Node.js 20+
 - npm 9+
 - Доступ к LLM (локально или в облаке)
-- pomljs
+- Mastra
+- pomljs (npm install pomljs)
 
 # Запуск дев-сервера
 

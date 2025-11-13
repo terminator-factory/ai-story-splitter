@@ -3,10 +3,11 @@ import { Mastra } from '@mastra/core/mastra';
 import { PinoLogger } from '@mastra/loggers';
 import { LibSQLStore } from '@mastra/libsql';
 import { storySplitter } from './agents/story-splitter-agent';
+import { jsonWorkflow } from './workflows/json-workflow';
 
 export const mastra = new Mastra({
+  workflows: { jsonWorkflow },
   agents: { storySplitter },
-  workflows: {},
   storage: new LibSQLStore({
     // stores observability, scores, ... into memory storage, if it needs to persist, change to file:../mastra.db
     url: ":memory:",

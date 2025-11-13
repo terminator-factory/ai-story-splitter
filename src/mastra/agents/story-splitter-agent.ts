@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { read, write } from 'pomljs';
 
-// ----- Обработка промпта -----
+// ----- Обработка poml в System Prompt -----
 const projectRoot = path.resolve(process.cwd().replace('.mastra\\output', ''));
 const pomlPath = path.resolve(projectRoot, 'src\\mastra\\prompt\\story-splitter-prompt.poml');
 const pomlFile = fs.readFileSync(pomlPath, 'utf-8');
